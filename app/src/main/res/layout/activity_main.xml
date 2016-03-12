@@ -1,0 +1,126 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    >
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:layout_marginTop="40dp"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/create_new_message"
+            android:layout_gravity="center"
+            android:textSize="20dp"
+            android:layout_marginTop="5dp"
+            android:textStyle="bold"
+            android:textColor="@android:color/white"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/dont_miss_call"
+            android:layout_gravity="right"
+            android:textSize="10dp"
+            android:layout_marginTop="5dp"
+            android:textStyle="bold"
+            android:textColor="@android:color/white"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:layout_marginTop="75dp"
+        >
+        <EditText android:id="@+id/edit_number"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:hint="@string/select_num_message"
+            android:textSize="16dp"
+            android:layout_gravity="center"
+            android:textAlignment="center"
+            android:textColor="@android:color/white"
+            android:editable="false"
+            android:maxLength="25"
+            />
+
+        <ImageView
+            android:id="@+id/contacts"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/contacts"
+            android:onClick="showContacts"
+            />
+    </LinearLayout>
+
+    <EditText android:id="@+id/edit_text"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/enter_text_message"
+        android:textSize="16dp"
+        android:layout_gravity="center"
+        android:textAlignment="center"
+        android:textColor="@android:color/white"
+        android:layout_marginTop="7dp"
+        />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:layout_marginTop="5dp"
+        >
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/activate_button"
+        android:onClick="activate"
+        android:layout_gravity="center"
+        android:layout_marginTop="5dp"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/save_button"
+        android:onClick="save"
+        android:layout_gravity="center"
+        android:layout_marginTop="5dp"
+        />
+    </LinearLayout>
+
+    <View style="@style/HorizontalLine"
+        android:layout_marginTop="30dp"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/manage_templates"
+        android:onClick="manageExistingTemplates"
+        android:layout_gravity="center"
+        android:layout_marginTop="40dp"
+        />
+</LinearLayout>
+</ScrollView>

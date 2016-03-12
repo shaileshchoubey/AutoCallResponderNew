@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Auto Reponder</string>
+
+    <string name="hello_world">Hello google!</string>
+    <string name="action_settings">Settings</string>
+    <string name="create_new_message">CREATE NEW TEMPLATE</string>
+    <string name="dont_miss_call">DON\'T MISS A CALL NOW</string>
+    <string name="hello_from_shailesh">Hello there!</string>
+    <string name="activate_button">ACTIVATE</string>
+    <string name="save_button">SAVE</string>
+    <string name="manage_templates">MANAGE TEMPLATES</string>
+    <string name="select_num_message">Select a contact name</string>
+    <string name="enter_text_message">Enter the text to send</string>
+    <string name="send_message">Send message</string>
+    <string name="select_contact">Select contact</string>
+    <string name="title_activity_display_message">Details</string>
+    <string name="title_activity_block_call">Block call</string>
+    <string name="title_activity_manage_templates">Manage templates</string>
+    <string name="title_activity_show_template_details">Show template details</string>
+    <string name="search_hint">Enter the contact name</string>
+</resources>
